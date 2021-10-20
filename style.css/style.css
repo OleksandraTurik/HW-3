@@ -169,23 +169,31 @@ header {
     line-height: 13px;
 }
 
-.menu {
-    max-width: 70%;
-}
-
 header .menu ul {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 
 header .menu ul li {
-    margin-right: 40px;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px;
+}
+
+header .menu ul li.active {
+    color: #ed2985;
+    border-bottom: 2px solid #ed2985;
 }
 
 .menu ul li {
     color: #FFFFFF;
     list-style: none;
     font-size: 14px;
+}
+
+.menu ul li:hover {
+    color: #ed2985;
 }
 
 hr {
@@ -340,9 +348,9 @@ h2.say {
 }
 
 .travel-background-image button {
-    background-color: #fff;
-    border: 1px solid #fff;
-    color: #242539;
+    background-color: #242539;
+    border: 1px solid #3E3F51;
+    color: #fff;
     align-items: center;
     cursor: pointer;
     display: flex;
@@ -837,6 +845,19 @@ footer .icons {
     height: 34px;
 }
 
+
+
+.latest_blog .latest-slider .list-event .block:hover .data {
+    background-color: #ED2985;
+    color: #fff;
+}
+
+.latest_blog .latest-slider .list-event .block:hover .descr p {
+    color: #ED2985;
+}
+
+
+
 @media (max-width: 767px) {
     
     header .menu ul {
@@ -1016,6 +1037,7 @@ footer .icons {
         position: relative;
         bottom: 0;
     }
+
 }
 
 @media (min-width:768px) and (max-width: 1199px) {
